@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'main_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({Key? key}) : super(key: key);
+  const WelcomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class WelcomeScreen extends StatelessWidget {
                 child: SizedBox(
                   height: MediaQuery.of(context).size.height * 0.4,
                   child: Image.asset(
-                    'assets/images/Welcome_screen.png', 
+                    'assets/images/Welcome_screen.png',
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -53,7 +53,6 @@ class WelcomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const MainScreen()),
                   );
                 },
-                child: const Text('Get Started'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.black,
                   foregroundColor: Colors.white,
@@ -62,6 +61,7 @@ class WelcomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30),
                   ),
                 ),
+                child: const Text('Get Started'),
               ),
             ],
           ),

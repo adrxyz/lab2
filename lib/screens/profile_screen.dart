@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+  const ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,6 @@ class ProfileScreen extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {},
-                    child: const Text('Follow'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.black,
                       foregroundColor: Colors.white,
@@ -75,11 +74,11 @@ class ProfileScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                       ),
                     ),
+                    child: const Text('Follow'),
                   ),
                   const SizedBox(width: 10),
                   OutlinedButton(
                     onPressed: () {},
-                    child: const Text('Message'),
                     style: OutlinedButton.styleFrom(
                       foregroundColor: Colors.black,
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
@@ -88,6 +87,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       side: const BorderSide(color: Colors.black),
                     ),
+                    child: const Text('Message'),
                   ),
                 ],
               ),
